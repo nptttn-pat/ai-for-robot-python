@@ -15,3 +15,6 @@ while(live!=0):
     if(x == 4):
         print("My name is Nattanon, You're welcome :3")
         break
+    if(live == 0):
+        print("*Died from Cringe*")
+        break
