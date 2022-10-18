@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import rospy
 import cv2
+import rospy
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 
@@ -29,3 +29,4 @@ class OpenCVROS(object):
 if __name__ == "__main__":
     opencv_ros = OpenCVROS()
     opencv_ros.main()
+
