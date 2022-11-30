@@ -22,7 +22,7 @@ class GoToPosition(smach.State):
         self.gotopos = rospy.ServiceProxy('robot/go_to_position', GoToPosition)
     
     def execute(self, ud):
-        rospy.loginfo("Executing state DoSth")
+        rospy.loginfo("Executing state GoToPosition")
         req = GoToPositionRequest()
         req.position_name = 'home'
         self.gotopos(req)
