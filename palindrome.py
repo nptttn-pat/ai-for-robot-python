@@ -4,7 +4,7 @@ front = -1
 back = len(str)
 
 while front <= back :
-    front += 1
+    front += 1 
     back -= 1
     if str[front] != str[back] :
         print("This word is not palindrome")

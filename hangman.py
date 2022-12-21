@@ -5,7 +5,7 @@ trial = 5
 while trial > 0:
     tmp = input("Guess letter: ")
     if tmp in chk.keys() :
-        print(f"Correct, trial {trial}")
+        print(f"Correct, trial {trial}") 
         chk[tmp] -= 1
     else:
         trial -= 1

@@ -3,7 +3,7 @@ num = int(input("Number: "))
 a = 1 
 b = 1
 
-cnt = 3
+cnt = 3 
 
 if num > 1:
     print(a)
