@@ -25,6 +25,7 @@ def hangman():
     global already_guessed
     global play_game
     limit = 5
+    num=0
     guess = input("Guess letter :")
     guess = guess.strip()
 
