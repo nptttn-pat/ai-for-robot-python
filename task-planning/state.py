@@ -16,7 +16,7 @@ class DoSth(smach.State):
         self.dosth_ser()
         return 'success'
 
-class GoToPosition(smach.State):
+class GoToPosition1(smach.State):
     def __init__(self, outcomes=['success', 'fail']):
         super().__init__(outcomes)
         self.gotopos = rospy.ServiceProxy('robot/go_to_position', GoToPosition)
@@ -36,7 +36,7 @@ class RobotState(object):
         with sm:
             smach.StateMachine.add('DoSth1', DoSth(), 
                                transitions={'success':'Gotoposition', 'fail':'DoSth1'})
-            smach.StateMachine.add('Gotoposition', GoToPosition(), 
+            smach.StateMachine.add('Gotoposition', GoToPosition1(), 
                                 transitions={'success':'DoSth2', 'fail':'Gotoposition'})
             smach.StateMachine.add('DoSth2', DoSth(), 
                                transitions={'success':'---finish---', 'fail':'DoSth2'})
