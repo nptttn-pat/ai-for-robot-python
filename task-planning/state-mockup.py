@@ -18,7 +18,7 @@ class StateMockUp(object):
     
     def dosth_callback(self, data):
         rospy.loginfo("Doing something")
-        return EmptyResponse
+        return EmptyResponse()
     
 if __name__ == "__main__":
     mockup = StateMockUp()
