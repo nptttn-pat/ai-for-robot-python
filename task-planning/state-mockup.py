@@ -22,3 +22,4 @@ class StateMockUp(object):
     
 if __name__ == "__main__":
     mockup = StateMockUp()
+    rospy.spin()
